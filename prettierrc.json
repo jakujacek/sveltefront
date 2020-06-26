@@ -1,0 +1,9 @@
+{
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "svelteStrictMode": true,
+  "svelteSortOrder" : "styles-scripts-markup",
+  "svelteBracketNewLine": true,
+  "svelteAllowShorthand": false
+}
