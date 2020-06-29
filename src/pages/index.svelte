@@ -1,3 +1,1 @@
-<section>
-  Tu narazie nic nie ma
-</section>
+<section>Tu narazie nic nie ma</section>
