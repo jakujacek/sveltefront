@@ -1,45 +1,41 @@
-# routify-starter
+# Svelte front
 
-Starter template for [Routify](https://github.com/sveltech/routify)
+Projekt *sveltefront* wykorzystuje [Routify](https://routify.dev/) jako nakładkę na framework/kompilator
+[Svelte](https://svelte.dev/). W projekcie wykorzystywany jest również framework do CSS: [Tailwind](https://tailwindcss.com/). Poniższa instrukcja krok po kroku przeprowadza przez proces instalacyjny oraz konfigurację edytora.
 
-### Get started
+### Instalacja
+Wymagania: node >= v12;
 
-To use this starter run `npx @sveltech/routify init` in an empty folder.
+1. Pobieramy repozytorium komendą: `git clone https://github.com/jakujacek/sveltefront.git`
+2. Następnie `cd sveltefront`
+3. `npm install`
 
-Alternatively, you can clone this repo.
+### Konfiguracja edytora
 
-### Npm scripts
+Do pracy z projektem będziemy wykorzystywać edytor: *Visual Studio Code*. Żeby projekt działał poprawnie należy dokonać zmian w konfiguracji edytora. Wciskamy przyciski `ctrl + p` i wpisujemy `settings.json`. Wchodzimy w plik i dodajemy:
+```
+"eslint.validate": [
+    "javascript",
+    "svelte"
+  ],
+  "prettier.configPath": ".prettierrc"
+```
+Zapisujemy zmiany i wychodzimy.
+Nasz edytor został skonfigurowany.
 
-| Syntax           | Description                                                                       |
+### Skrypty package.json
+
+Wersję developerską uruchamia się poprzez komendę: `npm run dev`;
+
+Poniższa tabela przedstawia i tłumaczy część komend:
+
+| Komenda           | Opis                                                                       |
 |------------------|-----------------------------------------------------------------------------------|
-| `dev`            | Development (port 5000)                                                           |
-| `dev-dynamic`    | Development with dynamic imports                                                  |
-| `build`          | Build a bundled app with SSR + prerendering and dynamic imports                   |
-| `serve`          | Run after a build to preview. Serves SPA on 5000 and SSR on 5005                  |
-| `deploy:*`       | Deploy to netlify or now                                                          |
-| `export`         | Create static pages from content in dist folder (used by `npm run build`)         |
-
-### SSR and pre-rendering
-
-SSR and pre-rendering are included in the default build process.
-
-`npm run deploy:(now|netlify)` will deploy the app with SSR and prerendering included.
-
-To render async data, call the `$ready()` helper whenever your data is ready.
-
-If $ready() is present, rendering will be delayed till the function has been called.
-
-Otherwise it will be rendered instantly.
-
-See [src/pages/example/api/[showId].svelte](https://github.com/sveltech/routify-starter/blob/master/src/pages/example/api/%5BshowId%5D.svelte) for an example.
-
-### Production
-
-* For SPA or SSR apps please make sure that url rewrite is enabled on the server.
-* For SPA redirect to `__dynamic.html`.
-* For SSR redirect to the lambda function or express server.
-
-### Issues?
-
-File on Github! See https://github.com/sveltech/routify/issues .
-"# sveltefront" 
+| `dev`            | wersja developerska (port 5000)                                                           |
+| `dev-dynamic`    | Wersja developerska z dynamicznymi importami                                                  |
+| `build`          | Zbudowanie zbundlowanej wersji aplikacji jako SSR +  prerendering oraz z dynamicznymi importami            |
+| `serve`          | Podgląd po zbundlowaniu. Serves SPA on 5000 and SSR on 5005                  |
+| `deploy:*`       | Deploy do netlify lub now: `npm run deploy:(now|netlify)`                                                        |
+| `export`         | Stworzenie strony statycznej w folderze `/dist`                              |
+| `prettier`       | Sprawdza formatowanie plików                                                 |
+| `prettier-fix`    | Poprawia źle zformatowane pliki                                              |
