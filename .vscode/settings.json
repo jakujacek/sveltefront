@@ -1,0 +1,15 @@
+{
+  "eslint.options": { "configFile": "C:/Users/jakuj/projects/svelte-front/.eslintrc.json" },
+  "eslint.validate": [
+    "javascript",
+    "svelte",
+    "html"
+  ],
+  "prettier.configPath": ".prettierrc",
+  "[svelte]": {
+    "editor.formatOnSave": false
+  },
+  "files.associations": {
+    "*.svelte": "svelte"
+  }
+}

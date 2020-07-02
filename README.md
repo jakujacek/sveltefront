@@ -7,21 +7,20 @@ Projekt *sveltefront* wykorzystuje [Routify](https://routify.dev/) jako nakładk
 Wymagania: node >= v12;
 
 1. Pobieramy repozytorium komendą: `git clone https://github.com/jakujacek/sveltefront.git`
-2. Następnie `cd sveltefront`
+2. `cd sveltefront`
 3. `npm install`
 
 ### Konfiguracja edytora
 
-Do pracy z projektem będziemy wykorzystywać edytor: *Visual Studio Code*. Żeby projekt działał poprawnie należy dokonać zmian w konfiguracji edytora. Wciskamy przyciski `ctrl + p` i wpisujemy `settings.json`. Wchodzimy w plik i dodajemy:
-```
-"eslint.validate": [
-    "javascript",
-    "svelte"
-  ],
-  "prettier.configPath": ".prettierrc"
-```
-Zapisujemy zmiany i wychodzimy.
-Nasz edytor został skonfigurowany.
+Do pracy z projektem będziemy wykorzystywać edytor: *Visual Studio Code*. W projekcie jest już zawarty folder `.vscode`, w którym skonfigurowany jest edytor. Konfiguracja ta jest konieczna, żeby pliki `*.svelte` działały wraz z `eslintem` i `prettierem`. Na starcie wyłączone jest formatowanie plików na zapis. Opcję tę można włączyć, nie należy jednak zmian w tym pliku wypychać do repozytorium.
+
+Wymagane/rekomendowane rozszerzenia do edytora:
+1. ESLint,
+2. Prettier - Code formater,
+3. Svelte,
+4. Svelte Intelisense,
+5. Tailwind CSS IntelliSense,
+6. GitLens
 
 ### Skrypty package.json
 
