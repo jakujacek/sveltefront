@@ -1,5 +1,4 @@
 {
-  "eslint.options": { "configFile": "C:/Users/jakuj/projects/svelte-front/.eslintrc.json" },
   "eslint.validate": [
     "javascript",
     "svelte",
