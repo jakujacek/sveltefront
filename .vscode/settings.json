@@ -1,0 +1,14 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "svelte",
+    "html"
+  ],
+  "prettier.configPath": ".prettierrc",
+  "[svelte]": {
+    "editor.formatOnSave": false
+  },
+  "files.associations": {
+    "*.svelte": "svelte"
+  }
+}
