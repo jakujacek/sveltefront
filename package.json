@@ -14,11 +14,11 @@
     "routify": "routify -D",
     "prettier": "npx prettier@2.0.5 . --check --plugin-search-dir=. ./**/*",
     "prettier-fix": "npx prettier@2.0.5 . --write --plugin-search-dir=. ./**/*",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "husky": {
     "hooks": {
-      "pre-push": ""
+      "pre-push": "npm run prettier-fix"
     }
   },
   "devDependencies": {
