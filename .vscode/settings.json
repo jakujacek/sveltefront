@@ -6,9 +6,6 @@
   ],
   "prettier.configPath": ".prettierrc",
   "[svelte]": {
-    "editor.formatOnSave": false
-  },
-  "files.associations": {
-    "*.svelte": "svelte"
+    "editor.formatOnSave": true
   }
 }
