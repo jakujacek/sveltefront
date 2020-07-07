@@ -27,6 +27,7 @@
       "no-alert": 1,
       "no-empty-function": 1,
       "no-multi-spaces": 1,
+      "no-console": 2,
       "no-shadow": 1,
       "camelcase": 1
     }
